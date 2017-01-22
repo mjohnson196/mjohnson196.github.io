@@ -4,9 +4,7 @@ var next; //need to include addElemById;
 
 function getAnswer() {
 
-
 	var answer = document.getElementById('answer'); //melanie needs to create this html element
-	var uAnswer = ' '; //this might be an element who fuckin knows at this point
 
 	return answer
 }
@@ -18,7 +16,8 @@ function generateQuestion() {
 	answer = getAnswer();
 	answer.value = '';
 	
-	wordArray = Math.floor(Math.random() * 1000); //this probably wont work  
+	var word = wordArray[Math.floor(Math.random() * 1000)]; //this probably wont work 
+	alert (word); 
 	translation();
 
 }
