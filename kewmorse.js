@@ -14,7 +14,7 @@ var wordArray;
 
 function generateQuestion() {
 	answer = getAnswer();
-	answer.value = '';
+	//answer.value = '';
 	
 	var word = wordArray[Math.floor(Math.random() * 1000)]; //this probably wont work 
 	alert (word); 
