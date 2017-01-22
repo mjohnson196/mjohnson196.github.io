@@ -21,10 +21,12 @@ for(var i = 0; i < lValues.length; i++)
     lResult[lValues[i].key] = lValues[i].value;
 }
 
-for(var j = 0; j < nValues.length; i++)
+for(var j = 0; j < nValues.length; j++)
 {
 	nResult[nValues[j].key] = nValues[j].value;
 }
+
+
 
 console.log(lResult);
 console.log(nResult);
