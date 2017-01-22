@@ -25,7 +25,7 @@ function generateQuestion() {
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState == XMLHttpRequest.DONE) {
-    	wordArray = xhr.responseText;
+    	wordArray = JSON.parse(xhr.responseText);
     	generateQuestion();
 
     }
