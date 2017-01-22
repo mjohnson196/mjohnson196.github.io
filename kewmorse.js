@@ -15,12 +15,20 @@ var wordArray;
 function generateQuestion() {
 	answer = getAnswer();
 	//answer.value = '';
-	var getTranslation;
 	
 	
-	var word = wordArray[Math.floor(Math.random() * 1000)]; //this probably wont work 
+	
+	var word = wordArray[Math.floor(Math.random() * 1000)];  
 	document.getElementById('word').innerHTML = word;
-	word = translation(result, lValues);
+
+	translation(result, lValues, length);
+
+	for(var i = 0; i < lValues.length; i++)
+{
+    result[lValues[i].key] = lValues[i].value;
+    wordArray[i] = result;
+}
+
 	
 
 }
