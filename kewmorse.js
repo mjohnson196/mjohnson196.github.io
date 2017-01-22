@@ -1,4 +1,4 @@
-var rand, morseCode, toEn;
+var result, lValues;
 var correct; //need to include addElemById;
 var next; //need to include addElemById;
 
@@ -15,11 +15,12 @@ var wordArray;
 function generateQuestion() {
 	answer = getAnswer();
 	//answer.value = '';
+	var getTranslation;
+	
 	
 	var word = wordArray[Math.floor(Math.random() * 1000)]; //this probably wont work 
-	word = translation();
 	document.getElementById('word').innerHTML = word;
-
+	word = translation(result, lValues);
 	
 
 }
