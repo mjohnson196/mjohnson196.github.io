@@ -17,7 +17,7 @@ function generateQuestion() {
 	//answer.value = '';
 	
 	var word = wordArray[Math.floor(Math.random() * 1000)]; //this probably wont work 
-	alert (word); 
+	document.write('<h3>' + (word) + '</h3>'); 
 	translation();
 
 }
