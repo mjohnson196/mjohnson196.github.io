@@ -16,13 +16,25 @@ function generateQuestion() {
 	answer = getAnswer();
 	//answer.value = '';
 	
-	
-	var word = wordArray[Math.floor(Math.random() * 1000)];  
-	document.getElementById('word').innerHTML = word;
-
 	translation(result, lValues);
 
-	word = lValues.value;
+
+
+	var word = wordArray[Math.floor(Math.random() * 1000)]; 
+
+	for (int i = 0; i < 1000; i++)
+	{
+		wordArray[i] = result[lValues[i]];
+		
+	}
+
+	word = wordArray[];
+
+	document.getElementById('word').innerHTML = word;
+
+	
+
+
 }
 
 function translation(result, lValues) {
@@ -47,7 +59,7 @@ for(var i = 0; i < lValues.length; i++)
 
 
 
-
+return result;
 
 
 
