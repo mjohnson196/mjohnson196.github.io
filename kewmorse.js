@@ -31,9 +31,11 @@ var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState == XMLHttpRequest.DONE) {
     	wordArray = JSON.parse(xhr.responseText);
-    	alert(translation(result, lValues));
-
+    	translation();
     	generateQuestion();
+    	
+
+    	
 
     }
 }
