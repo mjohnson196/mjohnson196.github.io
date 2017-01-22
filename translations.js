@@ -1,7 +1,6 @@
-function translation() {
+function translation(result, lValues) {
 
-var lResult = {};
-var nResult = {};
+var result = {};
 
 var lValues = [{key:"a", value:".-"},{key:"b", value:"-..."}, {key: "c", value: "-.-."}, {key: "d", value: "-.."}, {key: "e", value: "."}, {key: "f", value: "..-."},
 {key:"g", value: "--.-"}, {key: "h", value: "...."}, {key: "i", value: ".."}, {key: "j", value: ".---"}, {key:"k", value: "-.-"}, {key:"l", value: ".-.."},
@@ -9,27 +8,20 @@ var lValues = [{key:"a", value:".-"},{key:"b", value:"-..."}, {key: "c", value: 
 {key: "s", value: "..."}, {key: "t", value: "-"}, {key: "u", value: "..-"}, {key: "v", value: "...-"}, {key: "w", value: ".--"}, {key: "x", value: "-..-"},
 {key: "y", value: "-.--"}, {key: "z", value: "--.."}];
 
-var nValues = [{key: "1", value: ".----"}, {key: "2", value: "..---"}, {key: "3", value: "...--"}, {key: "4", value: "....-"}, {key: "5", value: "....."},
-{key: "6", value: "-...."}, {key: "7", value: "--..."}, {key: "8", value: "---.."}, {key: "9", value: "----."}, {key: "0", value: "-----"}];
-
 var lLength = lValues.length;
-var nLength = nValues.length;
+
 
 
 for(var i = 0; i < lValues.length; i++)
 {
-    lResult[lValues[i].key] = lValues[i].value;
-}
-
-for(var j = 0; j < nValues.length; j++)
-{
-	nResult[nValues[j].key] = nValues[j].value;
+    result[lValues[i].key] = lValues[i].value;
 }
 
 
+return result;
 
-console.log(lResult);
-console.log(nResult);
+
+
 
 
 }

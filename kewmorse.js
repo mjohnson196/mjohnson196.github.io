@@ -15,23 +15,10 @@ var wordArray;
 function generateQuestion() {
 	answer = getAnswer();
 	//answer.value = '';
-	
-	translation(result, lValues);
-
-
 
 	var word = wordArray[Math.floor(Math.random() * 1000)]; 
-
-	for (int i = 0; i < 1000; i++)
-	{
-		wordArray[i] = result[lValues[i]];
-		
-	}
-
-	word = wordArray[];
-
 	document.getElementById('word').innerHTML = word;
-
+	word = translation(result, lValues);
 	
 
 
